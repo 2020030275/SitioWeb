@@ -10,16 +10,26 @@ body{
 
 header{
     padding: 50px;
-    background-color: aquamarine;
+    background-color: #570e28;
     text-align: center;
     height: 180px;
+    color: #fec63d;
+    
+}
+
+.label-1 {
+	width: 535px;
+	height: 75px;
+	text-align: left;
 }
 
 nav{
+    padding: 10px;
     display: flex;
     flex-direction: row;
-    background-color: #333;
+    background-color: #840705;
     justify-content: center;
+
     
 }
 
@@ -28,6 +38,38 @@ nav a{
     padding: 14px 20px;
     text-decoration: none;
     
+}
+
+.pestañass{
+
+    background-color: #fec63d;
+    padding: 15px;
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.pestaña-actual{
+
+    background-color: #d68227;
+    padding: 15px;
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.pestaña{
+	width: 694px;
+	height: 36px;
+	background: #fec63d;
+	color: #000000;
+	border-color: #7d2709;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 8px 8px 0px 0px;
+	font-family: "Amiko";
+	font-weight: 400;
+	font-size: 18px;
+	text-align: center;
 }
 
 .row{
