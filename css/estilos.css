@@ -6,10 +6,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #570e28;
 }
 
 header{
-    padding: 50px;
     background-color: #570e28;
     text-align: center;
     height: 180px;
@@ -17,11 +17,6 @@ header{
     
 }
 
-.label-1 {
-	width: 535px;
-	height: 75px;
-	text-align: left;
-}
 
 nav{
     padding: 10px;
@@ -33,8 +28,11 @@ nav{
     
 }
 
+
+
 nav a{
-    color: white;
+
+    color: black;
     padding: 14px 20px;
     text-decoration: none;
     
@@ -56,25 +54,22 @@ nav a{
     border: 2px solid black;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    font-family: "Amiko";
 }
 .pestaña{
-	width: 694px;
-	height: 36px;
-	background: #fec63d;
-	color: #000000;
-	border-color: #7d2709;
-	border-width: 1px;
-	border-style: solid;
-	border-radius: 8px 8px 0px 0px;
-	font-family: "Amiko";
-	font-weight: 400;
-	font-size: 18px;
-	text-align: center;
+	background-color: #fec63d;
+    padding: 15px;
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: "Amiko";
 }
 
 .row{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 aside{
@@ -93,9 +88,142 @@ section{
 }
 
 footer{
+    width: 100%;
     padding: 20px;
     text-align: center;
     background-color: palevioletred;
+}
+
+.contenedor-empresa {
+	width: 80%;
+	min-height: 60vh;
+	padding: 8px 8px 8px 8px;
+	background: #ffa834;
+	border-color: #ffa834;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.acercade{
+    width: 50%;
+    text-align: justify;
+    align-items: center;
+    float: left;
+}
+.empresa{
+    width: 40%;
+    float: right;
+    margin-right: -4%;
+}
+
+.promociones{
+
+    width: 852px;
+    height: 203px;
+    padding: 20px 20px 20px 20px;
+    background: #FFEAD0;
+    font-family: "Barrio";
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contacto{
+
+    width: 80%;
+    height: 210px;
+    background: #ffa834;
+    border-color: #ffa834;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.contacto-izq{
+
+    float: left;
+    width: 40%;
+    color: #5b1a04;
+    font-family: "Antic";
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 4%;
+}
+
+.contacto-der{
+    float: right;
+    width: 40%;
+    color: #5b1a04;
+    font-family: "Antic";
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 4%    ;
+}
+
+.ubicacion{
+    color: white;
+}
+
+.ubicacion-izq{
+    width: 60%;
+    float: left;
+    font-size: 20px;
+}
+
+.ubicacion-izq li{
+    margin-bottom: 50px;
+}
+.ubicacion-der{
+    width: 40%;
+    float: right;
+}
+
+.datos{
+
+    width: 40%;
+    background: #ffa834;
+    border-color: #ffa834;
+    border-width: 1px;
+    border-style: solid;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.query{
+    width: 70%;
+    text-align: right;
+}
+
+.productos-flex{
+    margin-left: 5%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.card{
+    width: 250px;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    background-color: white;
+}
+
+#productos {
+    width: 95%;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#productos li{
+    width: 33%;
+}
+.img{
+    align-content: center;
 }
 
 @media screen and (max-width: 700px){

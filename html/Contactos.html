@@ -5,84 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/estilos.css">
-    <title>FlexBox</title>
+    <title>Contactos</title>
 </head>
 <body>
 
     <header>
-        <h1>Pizzas castillo</h1>
+        <img src="/img/logo.png" alt="logo" width="75px" height="75px" style="margin-top: 20px;">
+        <h1>Pizzas Castillo</h1>
     </header>
 
     <nav>
-        <a href="/html/index.html">Home</a>
-        <a href="/html/Empresa.html">Empresa</a>
-        <a href="/html/Contactos.html">Contacto</a>
-        <a href="/html/Productos.html">Productos</a>
+        <div class="pestaña">
+            <a href="/html/index.html">Home</a>
+        </div>
+
+        <div class="pestaña">
+            <a href="/html/Empresa.html">Empresa</a>
+        </div>
+        
+        <div class="pestaña-actual">
+            <a href="/html/Contactos.html">Contacto</a>
+        </div>
+        
+        <div class="pestaña">
+            <a href="/html/Productos.html">Productos</a>
+        </div>
+        
     </nav>
 
-    <div class="row">
+    <div class="contenedor">
+        <div class="row">
         
-        <div class="contacto">
-            <div class="titulo">
-                
-            <div class="contacto-izq">
-
-            </div>
-            <div class="contacto-der">
-
-            </div>
-
-        </div>
-
-        
-    </div>
-
-    <div class="row">
-        <div class="ubicacion">
-            <div class="titulo">
-                
-            <div class="ubicacion-izq">
-
-            </div>
-            <div class="ubicacion-der">
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="row">
-        <div class="datos">
-            <div class="">
-                <div class="titulo-datos">
-                    <h1>Contacto</h1>
+            <div class="contacto">
+                <div class="titulo">
+                    <h1 style="text-align: center;">Informacion</h1>
+                </div>
                     
-                <div class="query">
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" name="nombre" id="nombre">
-                    <br><br>
-
-                    <label for="correo">Correo: </label>
-                    <input type="email" name="correo" id="correo" >
-                    <br><br>
-
-                    <label for="comentarios">Comentarios: </label>
-                    <input type="text" name="comentarios" id="comentarios">
-
-                    <button type="submit">Enviar</button>
-
-
+                <div class="contacto-izq">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab libero recusandae placeat non repellendus nihil natus labore laboriosam. Enim cumque sed iure neque at! Placeat blanditiis autem delectus accusamus cupiditate!</p>
+                </div>
+                <div class="contacto-der">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, vero nemo? Tenetur amet beatae sit eos excepturi ad veniam, eveniet eius, cupiditate quaerat sunt ipsa quas necessitatibus perspiciatis! Molestiae, pariatur.</p>
                 </div>
     
+            </div>
+    
+            
+        </div>
+    
+        <div class="row">
+            <div class="ubicacion">
+                <div class="titulo">
+                    <h1 style="text-align: center;">Ubicacion</h1>
+                </div>
+                    
+                <div class="ubicacion-izq">
+                    <ul style="margin-top: 12%;">
+                        <li>Av. Sábalo Cerritos 109, Quintas del Mar, 82112 Mazatlán, Sin.</li>
+                        <li>Ángel Flores 420, Centro, 82000 Mazatlán, Sin.</li>
+                        <li>Paseo Olas Altas 1224, Centro, 82000 Mazatlán, Sin.</li>
+                    </ul>
+                </div>
+                <div class="ubicacion-der">
+                    <figure>
+                        <img src="/img/mapa.png" alt="">
+                    </figure>
+                </div>
     
             </div>
-
+    
         </div>
+    
+        <div class="row">
+            <div class="datos">
+                <div class="">
+                    <div class="titulo-datos">
+                        <h1>Contacto</h1>
+                        
+                    <div class="query">
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" name="nombre" id="nombre">
+                        <br><br>
+    
+                        <label for="correo">Correo: </label>
+                        <input type="email" name="correo" id="correo" >
+                        <br><br>
+    
+                        <label for="comentarios">Comentarios: </label>
+                        <input type="text" name="comentarios" id="comentarios">
+                        <br><br>    
+                        
+                        <div style="text-align: center; margin-left: 50%; margin-top: 10px; margin-bottom: 10px;"> 
+                            <button type="submit">Enviar</button>
+                        </div>
+                        
+    
+    
+                    </div>
+        
+        
+                </div>
+    
+            </div>
+        </div>
+
+            <footer>
+                <h2>Footer</h2>
+            </footer>
     </div>
 
-    <footer>
-        <h2>Footer</h2>
-    </footer>
+    
+
+    
 </body>
 </html>
