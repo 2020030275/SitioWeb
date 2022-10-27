@@ -72,6 +72,13 @@ nav a{
     justify-content: center;
 }
 
+#secundarias{
+    width: 70%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
 aside{
     flex: 30px;
     background-color: beige;
@@ -96,7 +103,6 @@ footer{
 
 .contenedor-empresa {
 	width: 80%;
-	min-height: 60vh;
 	padding: 8px 8px 8px 8px;
 	background: #ffa834;
 	border-color: #ffa834;
@@ -114,6 +120,11 @@ footer{
     width: 40%;
     float: right;
     margin-right: -4%;
+}
+
+.img-secundaria{
+    width: 115px;
+    height: 85px;
 }
 
 .promociones{
@@ -194,40 +205,113 @@ footer{
     text-align: right;
 }
 
-.productos-flex{
-    margin-left: 5%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-
-}
 
 .card{
     width: 250px;
     flex-direction: column;
-    text-align: center;
     align-content: center;
-    background-color: white;
+    color: #ffa834;
+    margin: auto;
+    text-align: justify;
+}
+.card h2{
+
+    text-align: center;
 }
 
 #productos {
-    width: 95%;
+    width: 100%;
+    flex-direction: row;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    
 }
+
 #productos li{
     width: 33%;
+    display: inline-block;
+    text-align: center;
 }
 .img{
     align-content: center;
+    height: 125px;
+    width: 250px;
 }
 
 @media screen and (max-width: 700px){
     nav, .row{
         flex-direction: column;
+        width: 100%;
     }
+
+    .row{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .promociones{
+        width: 100%;
+    }
+
+    #secundarias{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .img-secundaria{
+        text-align: center;
+        width: 40%;
+    }
+    
+    .contenedor-empresa{
+        width: 100%;
+    }
+
+    .acercade{
+        width: 100%;
+        float: none;
+    }
+
+    .empresa{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contacto{
+        width: 100%;
+    }
+
+    .ubicacion-izq{
+        width: 100%;
+    }
+
+    .ubicacion-der{
+        width: 100%;
+        text-align: center;
+    }
+
+    .datos{
+        width: 80%;
+        
+    }
+
+
+
+
+    #productos{
+        margin-left: -5%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+
+    
+
 }
