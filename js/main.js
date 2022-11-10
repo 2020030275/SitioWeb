@@ -60,12 +60,17 @@ function leerInputs(){
 function cerrarSesion(){
     signOut(auth).then(() => {
         alert('Cerrado Exitosamente');
+        window.location.href = "https://2020030275.000webhostapp.com/html/login.html"
     }).catch((error) => {
         console.log('Surgio un error' + error);
     });
 }
 
 if(window.location.href == "http://127.0.0.1:5500/html/admin.html"){
+    window.onload = validarUsuario();    
+}
+
+if(window.location.href == "https://2020030275.000webhostapp.com//html/admin.html"){
     window.onload = validarUsuario();    
 }
 
@@ -79,6 +84,17 @@ if(window.location.href == "http://127.0.0.1:5500/html/Productos.html"){
 if(window.location.href == "http://127.0.0.1:5500/html/admin.html"){
     window.onload = mostrarProductos(); 
 }
+
+if(window.location.href == "https://2020030275.000webhostapp.com/html/Productos.html"){
+    window.onload = mostrarProductos();    
+}
+
+
+if(window.location.href == "https://2020030275.000webhostapp.com/html/admin.html"){
+    window.onload = mostrarProductos(); 
+}
+
+
 
 
 

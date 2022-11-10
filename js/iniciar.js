@@ -35,7 +35,7 @@ function iniciarSesion(){
     signInWithEmailAndPassword(auth,usuario,contraseña).then((userCredential)=>{
         const user = userCredential.user
         alert("Inicio de sesion")
-        window.location.href="http://127.0.0.1:5500/html/admin.html"
+        window.location.href="https://2020030275.000webhostapp.com/html/admin.html"
     }).catch((error) =>{
         if(error.code == 'auth/invalid-email' || error.code == 'auth/wrong-password'){
             alert('Usuario o contraseña incorrectos')
