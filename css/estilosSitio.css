@@ -1,9 +1,10 @@
 *{
     box-sizing: border-box;
+    
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Amiko";
     margin: 0;
     padding: 0;
     background-color: #570e28;
@@ -242,6 +243,37 @@ footer{
     width: 250px;
 }
 
+#login{
+    margin: auto;
+    justify-content: center;
+    margin-top: 20%;
+    text-align: center;
+    background-color: white;
+    align-items: center;
+    width: 30%;
+    background-color: #fec63d;
+}
+#titulo-login{
+
+    padding-top: 2%;
+}
+
+#campos-admin{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    height: 10%;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    margin: auto;
+}
+
+#subidaImg{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
 @media screen and (max-width: 700px){
     nav, .row{
         flex-direction: column;
@@ -303,6 +335,13 @@ footer{
 
 
     #productos{
+        margin-left: -5%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #productos-admin{
         margin-left: -5%;
         width: 100%;
         flex-direction: column;

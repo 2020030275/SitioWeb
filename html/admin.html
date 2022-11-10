@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilosSitio.css">
+    <title>Admin</title>
+    <script src="/js/main.js" type="module"></script>
+</head>
+<body>
+
+    <div id="prohibido"></div>
+    <div id="xd">
+
+
+    <header>
+        <img src="/img/logo.png" alt="logo" width="75px" height="75px" style="margin-top: 20px;">
+        <h1>Pizzas Castillo</h1>
+        <br>
+        
+    </header>
+
+    
+
+
+    <div class="contenedor" style="background-color: #ffa834;">
+        <div class="row">
+            <button id="btnCerrarSesion">Cerrar Sesion</button>
+        </div>
+        <div id="campos-admin">
+
+            <label for="">ID: </label>
+            <input type="text" id="txtId" required>
+
+            <label for="">Nombre: </label>
+            <input type="text" id="txtNombre" required>
+
+            <label for="">Descripcion: </label>
+            <textarea name="txtDescripcion" id="txtDescripcion" cols="82" rows="1" required></textarea>
+
+            <label for="">Precio: </label>
+            <input type="text" id="txtPrecio" required>
+
+            <label for="">Estatus: </label>
+            <select name="Estatus" id="Estatus">
+                <option value="0">Disponible</option>
+                <option value="1">No disponible</option>
+            </select>
+
+            <hr>
+
+
+        </div>
+
+        <div id="subidaImg">
+            <label for="">Nombre de la imagen: </label>
+            <input type="text" id="txtImagen" readonly="true">
+            <br>
+
+            <label for="">URL de la imagen: </label>
+            <input type="text" id="urlImagen" readonly="true">
+            <br>
+
+            <label for=""> Seleccionar la imagen jpg, jpeg, png</label>
+            <input type="file" name="imgFile" id="imgFile" accept=".jpg , .jpeg , .png">
+            <br>
+
+            <img src="/img/icono.png" alt="preview" height="200px" width="200px" id="imagenProducto">
+
+        </div>
+
+        <div class="row" style="justify-content: space-evenly; margin: auto; width: 50%;">
+            <button id="btnInsertar">Insertar Producto</button>
+            <button id="btnBuscar">Buscar por ID</button>
+            <button id="btnActualizar">Actualizar Producto</button>
+            <button id="btnDeshabilitar">Borrar Producto</button>
+            <button id="btnMostrar">Mostrar Productos</button>
+            <button id="btnLimpiar">Limpiar</button>
+
+        </div>
+
+        
+        
+            
+    </div>
+
+    <div class="row">
+
+        <h2>Listado de productos</h2>
+        <br>
+
+        <div class="productos-flex">
+    
+            <ul id="productos-admin">
+
+            </ul>
+    
+            
+        </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <h2>Todos los derechos reservados@ Pedro Antonio Sanchez Salas</h2>
+    </footer>
+    
+
+    
+</body>
+</html>
