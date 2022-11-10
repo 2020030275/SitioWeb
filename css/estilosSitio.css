@@ -8,6 +8,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #570e28;
+    
 }
 
 header{
@@ -134,8 +135,8 @@ footer{
     height: 203px;
     padding: 20px 20px 20px 20px;
     background: #FFEAD0;
-    font-family: "Barrio";
-    text-align: center;
+
+    text-align: justify;
     margin-bottom: 20px;
 }
 
@@ -154,18 +155,17 @@ footer{
     float: left;
     width: 40%;
     color: #5b1a04;
-    font-family: "Antic";
-    font-weight: 400;
     font-size: 18px;
     text-align: center;
     margin-left: 4%;
+    margin-bottom: 10%;
 }
 
 .contacto-der{
     float: right;
     width: 40%;
     color: #5b1a04;
-    font-family: "Antic";
+
     font-weight: 400;
     font-size: 18px;
     text-align: center;
@@ -246,7 +246,8 @@ footer{
 #login{
     margin: auto;
     justify-content: center;
-    margin-top: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
     text-align: center;
     background-color: white;
     align-items: center;
@@ -340,14 +341,18 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-decoration: none;
     }
+
     #productos-admin{
         margin-left: -5%;
         width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-decoration: none;
     }
+
 
     
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/estilosSitio.css">
     <title>Contactos</title>
+    <script src="/js/main.js" type="module"></script>
 </head>
 <body>
 
@@ -42,10 +43,15 @@
                 </div>
                     
                 <div class="contacto-izq">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab libero recusandae placeat non repellendus nihil natus labore laboriosam. Enim cumque sed iure neque at! Placeat blanditiis autem delectus accusamus cupiditate!</p>
+                    <h4>Telefono:</h4>
+                    <p> 3-56-98-01 (Sábalo Cerritos)</p>
+                    
                 </div>
                 <div class="contacto-der">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, vero nemo? Tenetur amet beatae sit eos excepturi ad veniam, eveniet eius, cupiditate quaerat sunt ipsa quas necessitatibus perspiciatis! Molestiae, pariatur.</p>
+                    <h4>Whatsapp:</h4>
+                    <p>66-91-10-64-65   (Sábalo Cerritos)  
+
+                    </p>
                 </div>
     
             </div>
@@ -79,24 +85,29 @@
                 <div class="">
                     <div class="titulo-datos">
                         <h1>Contacto</h1>
-                        
+                     
+                        <form action="">    
                     <div class="query">
                         <label for="nombre">Nombre: </label>
-                        <input type="text" name="nombre" id="nombre">
+                        <input type="text" name="nombre" id="nombre" required>
                         <br><br>
     
                         <label for="correo">Correo: </label>
-                        <input type="email" name="correo" id="correo" >
+                        <input type="email" name="correo" id="correo" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                         <br><br>
     
                         <label for="comentarios">Comentarios: </label>
-                        <input type="text" name="comentarios" id="comentarios">
+                        <input type="text" name="comentarios" id="comentarios" required>
                         <br><br>    
                         
                         <div style="text-align: center; margin-left: 50%; margin-top: 10px; margin-bottom: 10px;"> 
-                            <button type="submit">Enviar</button>
+                            
+                                <button type="submit">Enviar</button>
+                                <button id="limpiarContacto">Limpiar</button>
+                            
+                            
                         </div>
-                        
+                    </form>
     
     
                     </div>
@@ -108,7 +119,7 @@
         </div>
 
             <footer>
-                <h2>Todos los derechos reservados@ Pedro Antonio Sanchez Salas</h2>
+                <h2>Todos los derechos reservados <a href="login.html">@</a> Pedro Antonio Sanchez Salas</h2>
             </footer>
     </div>
 

@@ -40,6 +40,7 @@ var btnBuscar = document.getElementById('btnBuscar');
 var btnActualizar = document.getElementById('btnActualizar');
 var btnDeshabilitar = document.getElementById('btnDeshabilitar');
 var btnLimpiar = document.getElementById('btnLimpiar');
+var limpiarContacto = document.getElementById('limpiarContacto');
 var btnMostrar = document.getElementById('btnMostrar');
 var archivo = document.getElementById('imgFile');
 var lista = document.getElementById('productos-admin');
@@ -288,6 +289,13 @@ function limpiar(){
 
 }
 
+function limpiarContactos(){
+    document.getElementById('comentarios').value = "";
+    document.getElementById('correo').value =""; 
+    document.getElementById('nombre').value = "";
+    
+}
+
 // Eventos
 if(btnCerrarSesion){
     btnCerrarSesion.addEventListener('click',cerrarSesion);
@@ -323,4 +331,8 @@ if(archivo){
 
 if(btnCerrarSesion){
     btnCerrarSesion.addEventListener('click',cerrarSesion);
+}
+
+if(limpiarContacto){
+    limpiarContacto.addEventListener('click', limpiarContactos)
 }
